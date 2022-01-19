@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel.com | The official site</title>
+
+    <link rel="stylesheet" type ="text/css" href="Sources\css\bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type ="text/javascript"  src ="Sources\jquery-3.6.0.min.js">  </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type ="text/javascript" src="Sources/js/bootstrap.bundle.min.js">  </script>
+
+</head>
+
+<body style="background-color: rgb(248, 222, 210);">
+
+    
+      
+     
+
+    <style> 
+        
+
+        .carousel-slide{
+            text-align: center;
+            
+        }    
+
+        .col-lg-2{
+            padding-top: 18px;
+            text-align: center;
+            min-height: 10%;
+            text-orientation: justify;
+            background-color: black;
+            padding-bottom: 10px;
+        }
+                 </style>
+
+
+
+
+        <div class ="row"  style="text-align: center;background-color:black; min-height:60px; color: white;">
+          <div class = "col-lg-12" style="padding-bottom: 7px;" ><center> <img src="C:\Users\ASUS\Desktop\WebsiteProject\Pages\Images\marvelaclogo.jpg" height="5%" width="14%"
+            style="align-items: center;"> </center></div>  
+          <div class = "col-lg-2" id="homepage" ><h5>HOME</h5></div>
+            <div class = "col-lg-2" id="newspg" ><h5>NEWS</h5></div>
+            <div class = "col-lg-2" id ="moviespg"><h5>MOVIES & TV SHOWS</a></h5></div>
+            <div class = "col-lg-2" id ="comicspg"><h5>COMICS</h5></div>
+            <div class = "col-lg-2" id ="signinpg"><h5>SIGN UP</h5></div>
+            <div class = "col-lg-2" id ="myprofpg"><h5>SIGN IN</h5></div>
+        </div>
+      
+        <script>
+
+
+
+    function pageRedirectMovies() {
+      window.location.href = "Movies.html";
+    }
+    function pageRedirectHome() {
+      window.location.href = "index.html";
+    }  
+    function pageRedirectNews() {
+      window.location.href = "News.html";
+    }  
+    function pageRedirectComics() {
+      window.location.href = "Comics.html";
+    }  
+    function pageRedirectSignin() {
+      window.location.href = "Signup.html";
+    }  
+    function pageRedirectMyprofile() {
+      window.location.href = "Signin.html";
+    }       
+
+          $(document).ready(function(){
+              $("#homepage").on({
+  
+                  mouseenter:function(){
+                      $(this).css("background-color","red")
+                      
+                  },
+                      mouseleave:function(){
+                      $(this).css("background-color","black")
+                      $(this).css("color","white");
+                  },
+                      click:function(){
+                      $(this).css("background-color","red")
+                      $(this).css("color","white");
+                    },
+                      click:function(){
+                      $(this).css("background-color","red")
+                      $(this).css("color","white");
+                      pageRedirectHome();   
+                      },
+              })
+  
+              $("#newspg").on({
+  
+                  mouseenter:function(){
+                      $(this).css("background-color","red")
+                      
+                  },
+                      mouseleave:function(){
+                      $(this).css("background-color","black")
+                      $(this).css("color","white");
+                    },
+                      click:function(){
+                      $(this).css("background-color","red")
+                      $(this).css("color","white");
+                      pageRedirectNews();   
+                      },
+                  
+                  })
+  
+              $("#signinpg").on({
+  
+                  mouseenter:function(){
+                      $(this).css("background-color","red")
+                      
+                  },
+                      mouseleave:function(){
+                      $(this).css("background-color","black")
+                      $(this).css("color","white");
+                    },
+                      click:function(){
+                      $(this).css("background-color","red")
+                      $(this).css("color","white");
+                      pageRedirectSignin();   
+                      },
+                 
+                  })
+  
+              $("#myprofpg").on({
+  
+                  mouseenter:function(){
+                      $(this).css("background-color","red")
+                      
+                  },
+                      mouseleave:function(){
+                      $(this).css("background-color","black")
+                      $(this).css("color","white");
+                    },
+                      click:function(){
+                      $(this).css("background-color","red")
+                      $(this).css("color","white");
+                      pageRedirectMyprofile();   
+                      },
+                 
+                  })
+
+              $("#moviespg").on({
+  
+                  mouseenter:function(){
+                      $(this).css("background-color","red")
+                      
+                  },
+                      mouseleave:function(){
+                      $(this).css("background-color","black")
+                      $(this).css("color","white");
+                    },
+                      click:function(){
+                      $(this).css("background-color","red")
+                      $(this).css("color","white");
+                      pageRedirectMovies();
+                      
+                  }
+                  })
+
+              $("#comicspg").on({
+  
+                  mouseenter:function(){
+                      $(this).css("background-color","red")
+                      
+                  },
+                      mouseleave:function(){
+                      $(this).css("background-color","black")
+                      $(this).css("color","white");
+                    },
+                      click:function(){
+                      $(this).css("background-color","red")
+                      $(this).css("color","white");
+                      pageRedirectComics();   
+                      },
+                  })
+          });
+          </script>
+
+    
+<div class="container" style="padding-top: 2%;  text-align: center;">
+ <div class="row">
+  <!-- The slideshow -->
+  <div id="Imagecarousel" class="carousel slide" data-interval="2000" data-ride="carousel">
+   <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img height="35%" width="100%" src="Images/whatif/what-if-officialjpeg.jpeg"   alt="WhatIf" class="image-responsive">
+      <div class="carousel-caption">
+        <h3>Streaming Now</h3>
+        <p>Dive into endless posibilities!!!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="35%" width="100%" src="Images/hawkeye/hawkeye.jpg" alt="Hawkeye">
+      <div class="carousel-caption">
+        <h3>Streaming Now</h3>
+        <p>Dive into endless posibilities!!!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="35%" width="100%" src="Images/eternals/eternals.jpg" alt="Eternals">
+      <div class="carousel-caption">
+        <h3>Streaming Now</h3>
+        <p>Dive into endless posibilities!!!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="35%" width="100%" src="Images\spiderman-nwh\spiderman.jpg" alt="Eternals">
+      <div class="carousel-caption">
+        <h3>Streaming Now</h3>
+        <p>Dive into endless posibilities!!!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="35%" width="90%" src="Images\Morbius\morbius.jpg" alt="Eternals">
+      <div class="carousel-caption">
+        <h3>Streaming Now</h3>
+        <p>Dive into endless posibilities!!!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img height="35%" width="90%" src="Images\drstrange2\drstrange2.jpg" alt="Eternals">
+      <div class="carousel-caption">
+        <h3>Streaming Now</h3>
+        <p>Dive into endless posibilities!!!</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div> 
+
+
+</div>
+ 
+<div class="container" style="padding-top: 40px;">
+  <div class = "row" style="padding-top: 20px; background-color: red; font-family: Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); padding-top: 25px; padding-bottom: 45px;">
+    <div class="col-xs-12">
+      <div class ="panel-heading"><h2>About Us</h2></div>
+      <div class ="panel-body">
+        Marvel Comics is the brand name and primary imprint of Marvel Worldwide Inc., formerly Marvel Publishing, Inc. and Marvel Comics Group, a publisher of American comic books and related media. 
+        In 2009, The Walt Disney Company acquired Marvel Entertainment, Marvel Worldwide's parent company.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class ="container" style="background-color: crimson;">
+<h1 style="text-align: center; padding-top: 15%; padding-bottom: 15%; color: white;"> CHECK OUT OUR <BR>
+LATEST MOVIE TRAILERS </h1>
+</div>
+
+
+<div class="row" style="height:100%;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/JfVOs4VSpmA" title="YouTube video player" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><br>
+<hr style="color: red;">
+<div class ="container">
+  <h6 style="text-align: left; padding-top: 5%; padding-bottom: 5%;"> 
+    With Spider-Man's identity now revealed, our friendly neighborhood web-slinger is unmasked and no longer able to separate his normal life as Peter Parker from the high stakes of being a superhero. When Peter asks for help from Doctor Strange, the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man </h6> 
+<button type="button" class="btn btn-primary">BOOK TICKETS NOW<span class="badge"></span></button> </div>
+<hr style="color: red;">
+
+
+
+
+<div class="row" style="height:100%;">
+<iframe width="697" height="392" src="https://www.youtube.com/embed/Rt_UqUm38BI" title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><br>
+<hr style="color: red;">
+<div class ="container">
+  <h6 style="text-align: left; padding-top: 5%; "> 
+    To restore a world where everything is changing, Strange seeks help from his ally Wong (Benedict Wong), the Sorcerer Supreme, and the Avengers’ most powerful Scarlet Witch,Wanda (Elizabeth Olsen). But a terrible threat looms over humanity and the entire universe that no longer can be done by their power alone. Even more surprising, the greatest threat in the universe looks exactly like Doctor Strange. 
+  
+     <br><br><br>
+<button type="button" class="btn btn-primary">BOOK TICKETS NOW<span class="badge"></span></button> </div>
+<hr style="color: red;">
+
+
+<div class="row" style="height:100%;">
+  <iframe width="697" height="392" src="https://www.youtube.com/embed/oZ6iiRrz1SY" title="YouTube video player" frameborder="0"
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div><br>
+  <hr style="color: red;">
+  <div class ="container">
+    <h6 style="text-align: left; padding-top: 5%; "> 
+      Biochemist Michael Morbius tries to cure himself of a rare blood disease, but when his experiment goes wrong, he inadvertently infects himself with a form of vampirism instead.    
+       <br><br><br>
+  <button type="button" class="btn btn-primary">BOOK TICKETS NOW<span class="badge"></span></button> </div>
+  <hr style="color: red;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fa fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fa fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fa fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fa fa-instagram"></i
+          ></a>
+  
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fa fa-snapchat"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Form -->
+        <section class="">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input type="email" id="form5Example21" class="form-control" />
+                  <label class="form-label" for="form5Example21">Email address</label>
+                </div>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+    
+    
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Careers at Marvel</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Vacancies</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Internships</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Writers forum</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Graphic artists forum</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Games</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Playstation</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Xbox</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">PC</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Mobile</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Projects</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">The Marvel foundation</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Give a comic project</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">California hospital fund</a>
+                </li>
+                
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Shop</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Gift Items</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Toys</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Clothing Accessories</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Others</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 MARVEL
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+</body>
+</html>

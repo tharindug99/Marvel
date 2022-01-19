@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel | News </title>
+    <link rel="stylesheet" type ="text/css" href="Sources\css\bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type ="text/javascript"  src ="Sources\jquery-3.6.0.min.js">  </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type ="text/javascript" src="Sources/js/bootstrap.bundle.min.js">  </script>
+   
+</head>
+<body>
+    <style>
+    .carousel-slide{
+        text-align: center;
+        padding-top: 5%;
+    }    
+
+    .col-lg-2{
+        padding-top: 18px;
+        text-align: center;
+        min-height: 10%;
+        text-orientation: justify;
+        background-color: black;
+        padding-bottom: 10px;
+    }
+             </style>
+
+
+
+
+    <div class ="row"  style="text-align: center;background-color:black; min-height:60px; color: white;">
+      <div class = "col-lg-12" style="padding-bottom: 7px;" ><center> <img src="C:\Users\ASUS\Desktop\WebsiteProject\Pages\Images\marvelaclogo.jpg" height="5%" width="14%"
+        style="align-items: center;"> </center></div>  
+      <div class = "col-lg-2" id="homepage" ><h5>HOME</h5></div>
+        <div class = "col-lg-2" id="newspg" ><h5>NEWS</h5></div>
+        <div class = "col-lg-2" id ="moviespg"><h5>MOVIES & TV SHOWS</a></h5></div>
+        <div class = "col-lg-2" id ="comicspg"><h5>COMICS</h5></div>
+        <div class = "col-lg-2" id ="signinpg"><h5>SIGN UP</h5></div>
+        <div class = "col-lg-2" id ="myprofpg"><h5>SIGN IN</h5></div>
+    </div>
+  
+    <script>
+
+
+
+function pageRedirectMovies() {
+  window.location.href = "Movies.html";
+}
+function pageRedirectHome() {
+  window.location.href = "index.html";
+}  
+function pageRedirectNews() {
+  window.location.href = "News.html";
+}  
+function pageRedirectComics() {
+  window.location.href = "Comics.html";
+}  
+function pageRedirectSignin() {
+  window.location.href = "Signup.html";
+}  
+function pageRedirectMyprofile() {
+  window.location.href = "Signin.html";
+}       
+
+      $(document).ready(function(){
+          $("#homepage").on({
+
+              mouseenter:function(){
+                  $(this).css("background-color","red")
+                  
+              },
+                  mouseleave:function(){
+                  $(this).css("background-color","black")
+                  $(this).css("color","white");
+              },
+                  click:function(){
+                  $(this).css("background-color","red")
+                  $(this).css("color","white");
+                },
+                  click:function(){
+                  $(this).css("background-color","red")
+                  $(this).css("color","white");
+                  pageRedirectHome();   
+                  },
+          })
+
+          $("#newspg").on({
+
+              mouseenter:function(){
+                  $(this).css("background-color","red")
+                  
+              },
+                  mouseleave:function(){
+                  $(this).css("background-color","black")
+                  $(this).css("color","white");
+                },
+                  click:function(){
+                  $(this).css("background-color","red")
+                  $(this).css("color","white");
+                  pageRedirectNews();   
+                  },
+              
+              })
+
+          $("#signinpg").on({
+
+              mouseenter:function(){
+                  $(this).css("background-color","red")
+                  
+              },
+                  mouseleave:function(){
+                  $(this).css("background-color","black")
+                  $(this).css("color","white");
+                },
+                  click:function(){
+                  $(this).css("background-color","red")
+                  $(this).css("color","white");
+                  pageRedirectSignin();   
+                  },
+             
+              })
+
+          $("#myprofpg").on({
+
+              mouseenter:function(){
+                  $(this).css("background-color","red")
+                  
+              },
+                  mouseleave:function(){
+                  $(this).css("background-color","black")
+                  $(this).css("color","white");
+                },
+                  click:function(){
+                  $(this).css("background-color","red")
+                  $(this).css("color","white");
+                  pageRedirectMyprofile();   
+                  },
+             
+              })
+
+          $("#moviespg").on({
+
+              mouseenter:function(){
+                  $(this).css("background-color","red")
+                  
+              },
+                  mouseleave:function(){
+                  $(this).css("background-color","black")
+                  $(this).css("color","white");
+                },
+                  click:function(){
+                  $(this).css("background-color","red")
+                  $(this).css("color","white");
+                  pageRedirectMovies();
+                  
+              }
+              })
+
+          $("#comicspg").on({
+
+              mouseenter:function(){
+                  $(this).css("background-color","red")
+                  
+              },
+                  mouseleave:function(){
+                  $(this).css("background-color","black")
+                  $(this).css("color","white");
+                },
+                  click:function(){
+                  $(this).css("background-color","red")
+                  $(this).css("color","white");
+                  pageRedirectComics();   
+                  },
+              })
+      });
+      </script>
+
+<style>
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 2%;
+  font-family: 'Roboto', sans-serif;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 24%;
+}
+</style>
+<div class="container">
+  <img src="Images\News\news1.jpg" height="30%" width="100%"><br><br><hr style="color: red;">
+  <div class="centered" style="color: aliceblue;"><h1>All Marvel News</h1></div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+  <div class="col-lg-8"> <img src="Images\spiderman-nwh\spidermannews1.jpg" style="padding-right: 40%; padding-bottom: 5%; width:100%;">
+  </div>
+  <div class = "col-lg-4" style="font-size:xx-large; font-weight:bolder; color: rgb(0, 0, 0); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><p style="text-align: left;">Spider-Man: No Way Home Eyeing $200M+ Opening</p></div>
+  <br>
+<hr style="color: red;">
+</div>
+
+<div class="row">
+  <div class="col-lg-8"> <img src="Images\eternals\eternalsnews1.jpg" style="padding-right: 40%; padding-bottom: 5%; width:100%;">
+  </div>
+  <div class = "col-lg-4" style="font-size:xx-large; font-weight:bolder; color: rgb(0, 0, 0); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><p style="text-align: left;">'Eternals' Comes to Disney+ on January 12</p></div>
+  <br>
+<hr style="color: red;">
+</div>
+
+<div class="row">
+  <div class="col-lg-8"> <img src="Images\spiderman-nwh\spidermannews2.jpg" style="padding-right: 40%; padding-bottom: 5%; width:100%;">
+  </div>
+  <div class = "col-lg-4" style="font-size:xx-large; font-weight:bolder; color: rgb(0, 0, 0); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><p style="text-align: left;">Former Foes Return in New ‘Spider-Man: No Way Home’ Featurette</p></div>
+  <br>
+<hr style="color: red;">
+</div>
+
+<div class="row">
+  <div class="col-lg-8"> <img src="Images\spiderman-nwh\spidermannews3.jpg" style="padding-right: 40%; padding-bottom: 5%; width:100%;">
+  </div>
+  <div class = "col-lg-4" style="font-size:xx-large; font-weight:bolder; color: rgb(0, 0, 0); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><p style="text-align: left;">First Look at 'Spider-Man: Across the Spider-Verse (Part One)'</p></div>
+  <br>
+<hr style="color: red;">
+</div>
+
+<div class="row">
+  <div class="col-lg-8"> <img src="Images\moongirl and dinosaur\mganddinonews1.jpg" style="padding-right: 40%; padding-bottom: 5%; width:100%;">
+  </div>
+  <div class = "col-lg-4" style="font-size:xx-large; font-weight:bolder; color: rgb(0, 0, 0); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><p style="text-align: left;">'Marvel's Moon Girl and Devil Dinosaur' Releases First Teaser Trailer</p></div>
+  <br>
+<hr style="color: red;">
+</div>
+
+<div class="row">
+  <div class="col-lg-8"> <img src="Images\shangchi\shangchinews1.jpg" style="padding-right: 40%; padding-bottom: 5%; width:100%;">
+  </div>
+  <div class = "col-lg-4" style="font-size:xx-large; font-weight:bolder; color: rgb(0, 0, 0); font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"><p style="text-align: left;">‘Shang-Chi and the Legend of The Ten Rings’ Is Now Streaming On Disney+</p></div>
+  <br>
+<hr style="color: red;">
+</div>
+
+</div>
+
+ <!-- Footer -->
+ <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fa fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fa fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fa fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fa fa-instagram"></i
+        ></a>
+
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fa fa-snapchat"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+    
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Careers at Marvel</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Vacancies</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Internships</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Writers forum</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Graphic artists forum</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Games</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Playstation</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Xbox</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">PC</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Mobile</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Projects</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">The Marvel foundation</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Give a comic project</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">California hospital fund</a>
+              </li>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Shop</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Gift Items</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Toys</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Clothing Accessories</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Others</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 MARVEL
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</body>
+</html>
